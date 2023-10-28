@@ -1,21 +1,16 @@
 using UnityEngine;
 public enum GameState { FreeRoam, Battle}
-
-public class GameController : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] PlayerController playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
-
     GameState state;
-
-    // Start is called before the first frame update
     private void Start()
     {
         playerController.OnEncountered += StartBattle;
         battleSystem.OnBattleOver += EndBattle;
     }
-
     void StartBattle()
     {
         state = GameState.Battle;
@@ -27,15 +22,12 @@ public class GameController : MonoBehaviour
 
         battleSystem.StartBattle(playerParty, wildPokemon);
     }
-
     void EndBattle(bool won)
     {
         state = GameState.FreeRoam;
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);
     }
-
-    // Update is called once per frame
     private void Update()
     {
         if(state == GameState.FreeRoam)

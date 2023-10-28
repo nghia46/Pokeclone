@@ -1,0 +1,4 @@
+repository "FirstPokemon@nghialoe46@cloud"
+  path "/"
+    br "/main"
+    co "/main"

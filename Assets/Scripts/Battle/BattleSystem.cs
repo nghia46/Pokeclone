@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using static Pokemon;
 
@@ -23,8 +22,6 @@ public class BattleSystem : MonoBehaviour
 
     PokemonParty playerParty;
     Pokemon wildPokemon;
-
-    // Start is called before the first frame update
     public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon)
     {
         this.playerParty = playerParty;
@@ -158,8 +155,6 @@ public class BattleSystem : MonoBehaviour
             PlayerAction();
         }
     }
-
-    // Update is called once per frame
     public void HandleUpdate()
     {
         if(state == BattleState.PlayerAction)

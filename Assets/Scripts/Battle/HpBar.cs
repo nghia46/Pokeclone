@@ -1,16 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HpBar : MonoBehaviour
 {
     [SerializeField] GameObject health;
-    // Start is called before the first frame update
     public void SetHP(float hpNormalized)
     {
         health.transform.localScale = new Vector3(hpNormalized, 1f);
     }
-
     public IEnumerator SetHPSmooth(float newHp)
     {
         float curHp = health.transform.localScale.x;
@@ -22,7 +19,6 @@ public class HpBar : MonoBehaviour
             health.transform.localScale = new Vector3(curHp, 1f);
             yield return null;
         }
-
         health.transform.localScale = new Vector3(newHp, 1f);
     }
 }

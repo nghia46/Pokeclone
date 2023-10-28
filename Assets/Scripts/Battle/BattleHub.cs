@@ -23,14 +23,4 @@ public class BattleHub : MonoBehaviour
     {
         yield return hpBar.SetHPSmooth((float)_pokemon.HP / _pokemon.MaxHp);
     }
-
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
