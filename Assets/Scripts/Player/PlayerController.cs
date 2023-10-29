@@ -7,9 +7,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     private bool isMoving;
     private Vector2 input;
-
     public event Action OnEncountered;
-
     private Animator animator;
     public LayerMask solidObjectsLayer;
     public LayerMask grassLayer;

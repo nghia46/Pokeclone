@@ -11,5 +11,4 @@ public class MapArea : MonoBehaviour
         wildPokemon.Init();
         return wildPokemon;
     }
-
 }
