@@ -72,7 +72,7 @@ public class Pokemon
     public DamageDetails TakeDamage(Move move, Pokemon attacker)
     {
         float critical = 1f;
-        if(Random.value * 100f < 6.25f)
+        if(Random.value * 100f < 5f)
         {
             critical = 2f;
         }
