@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class BattleDialogBox : MonoBehaviour
 {
     [SerializeField] int lettersPerSecond;
-    [SerializeField] Text dialogText;
+    [SerializeField] TextMeshProUGUI dialogText;
     [SerializeField] Color highlightedColor;
 
     [SerializeField] GameObject actionSelector;
     [SerializeField] GameObject moveSelector;
     [SerializeField] GameObject moveDetails;
 
-    [SerializeField] List<Text> actionTexts;
-    [SerializeField] List<Text> moveTexts;
+    [SerializeField] List<TextMeshProUGUI> actionTexts;
+    [SerializeField] List<TextMeshProUGUI> moveTexts;
 
-    [SerializeField] Text ppText;
-    [SerializeField] Text typeText;
+    [SerializeField] TextMeshProUGUI ppText;
+    [SerializeField] TextMeshProUGUI typeText;
 
 
 
