@@ -13,6 +13,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleUnit enemyUnit;
     [SerializeField] BattleHub enemyHub;
     [SerializeField] BattleDialogBox dialogBox;
+    [SerializeField] PartyScreen partyScreen;
 
     public event Action<bool> OnBattleOver;
 
@@ -35,6 +36,8 @@ public class BattleSystem : MonoBehaviour
         playerHub.setData(playerUnit.Pokemon);
         enemyUnit.Setup(wildPokemon);
         enemyHub.setData(enemyUnit.Pokemon);
+
+        partyScreen.Init();
 
         dialogBox.SetMoveNames(playerUnit.Pokemon.Moves);
 
@@ -60,7 +63,8 @@ public class BattleSystem : MonoBehaviour
 
     void OpenPartyScreen()
     {
-        print("party screen");
+        partyScreen.SetPartyData(playerParty.Pokemons);
+        partyScreen.gameObject.SetActive(true);
     }
 
     IEnumerator PerformPlayerMove()
