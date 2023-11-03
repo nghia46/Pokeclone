@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveName: Kiss
   description: 
-  category: 0
-  type: 0
+  type: 18
   power: 0
   accurary: 100
   pp: 10
+  category: 0
+  effects:
+    boosts: []
+  target: 0

@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveName: Leer
   description: 
-  category: 2
   type: 1
   power: 0
   accurary: 100
   pp: 30
+  category: 2
+  effects:
+    boosts:
+    - stat: 1
+      boost: -1
+  target: 0
