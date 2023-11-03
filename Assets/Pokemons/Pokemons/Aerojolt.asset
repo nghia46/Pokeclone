@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61da689c6c1df1f4487401ab8cb4f723, type: 3}
+  m_Name: Aerojolt
+  m_EditorClassIdentifier: 
+  pokemonName: Aerojolt
+  description: "Aerojolt is a sleek, bird-like Pok\xE9mon with electric blue feathers
+    and sharp, lightning bolt-shaped wings. It's known for its incredible speed and
+    agility, and it's often seen darting through stormy skies, harnessing the power
+    of thunderstorms. Its electric abilities are not only used for offense but also
+    to navigate through turbulent weather. Aerojolt's eyes have a distinct, electrifying
+    glow that intensifies when it's charged up."
+  frondSprites: {fileID: 21300000, guid: 4e78a7717d2ed464ab241b2069e93fa0, type: 3}
+  backSprites: {fileID: 21300000, guid: d4cee26419e7b614eb343d88451525d2, type: 3}
+  type1: 10
+  type2: 5
+  maxHp: 90
+  attack: 100
+  defend: 40
+  spAttack: 110
+  spDefend: 40
+  speed: 120
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 8c6e77dbd893cc74a9703e3fa0255502, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 55847b3ffec53f04883a16f75c9c01ed, type: 2}
+    level: 5
