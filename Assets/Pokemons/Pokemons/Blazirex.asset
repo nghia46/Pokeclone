@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61da689c6c1df1f4487401ab8cb4f723, type: 3}
+  m_Name: Blazirex
+  m_EditorClassIdentifier: 
+  pokemonName: Blazirex
+  description: "Blazirex is a larger and more formidable Fire-type Pok\xE9mon that
+    still maintains the adventurous spirit of Firaxle. It has evolved into a bipedal
+    creature with even more pronounced red-orange scales and a majestic, flame-shaped
+    crest on its head. Blazirex's tail flame has grown larger and more intense, and
+    its eyes exude a determined and fiery gaze."
+  frondSprites: {fileID: 21300000, guid: 1f44d1b36963b084794cfc34fce02c26, type: 3}
+  backSprites: {fileID: 21300000, guid: 3a48f81774692374598f9914f88a473d, type: 3}
+  type1: 2
+  type2: 0
+  maxHp: 90
+  attack: 85
+  defend: 60
+  spAttack: 85
+  spDefend: 60
+  speed: 80
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 8c6e77dbd893cc74a9703e3fa0255502, type: 2}
+    level: 1
