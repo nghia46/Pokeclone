@@ -40,7 +40,19 @@ public class BattleSystem : MonoBehaviour
 
         yield return dialogBox.TypeDialog($"A wild {enemyUnit.Pokemon.Base.PokemonName} appeared!!!");
 
-        ActionSelection();
+        ChooseFirstTurn();
+    }
+
+    void ChooseFirstTurn()
+    {
+        if(playerUnit.Pokemon.Speed > enemyUnit.Pokemon.Speed)
+        {
+            ActionSelection();
+        }
+        else
+        {
+            StartCoroutine(EnemyMove());
+        }
     }
 
     void BattleOver(bool won)
@@ -341,8 +353,10 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SwitchPokemon(Pokemon newPokemon)
     {
+        bool currentPokemoFainted = true;
         if(playerUnit.Pokemon.HP > 0)
         {
+            currentPokemoFainted = false;
             yield return dialogBox.TypeDialog($"Come back {playerUnit.Pokemon.Base.PokemonName}");
             playerUnit.PlayFaintAnimation();
             yield return new WaitForSeconds(2f);
@@ -352,6 +366,13 @@ public class BattleSystem : MonoBehaviour
         dialogBox.SetMoveNames(newPokemon.Moves);
         yield return dialogBox.TypeDialog($"Go {newPokemon.Base.name}!");
 
-        StartCoroutine(EnemyMove());
+        if(currentPokemoFainted)
+        {
+            ChooseFirstTurn();
+        }
+        else
+        {
+            StartCoroutine(EnemyMove());
+        }
     }
 }
