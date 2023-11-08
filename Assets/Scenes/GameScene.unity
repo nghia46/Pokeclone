@@ -1691,9 +1691,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wildPokemons:
   - _base: {fileID: 11400000, guid: 1bd065e3da7adb043a00ca35f8c1e5e7, type: 2}
-    level: 1
+    level: 5
   - _base: {fileID: 11400000, guid: dd136c7f4ac9d384f8d07638773e2e56, type: 2}
-    level: 1
+    level: 50
 --- !u!1 &335902681
 GameObject:
   m_ObjectHideFlags: 0
@@ -12330,7 +12330,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1bd065e3da7adb043a00ca35f8c1e5e7, type: 2}
     - target: {fileID: 446861073118356669, guid: c4cc3deaebf41904daafd179e47b6a25, type: 3}
       propertyPath: pokemons.Array.data[0].level
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 446861073118356669, guid: c4cc3deaebf41904daafd179e47b6a25, type: 3}
       propertyPath: pokemons.Array.data[1]._base
